@@ -10,10 +10,6 @@ const comfortable = [
 		icon: 'mdi:language-typescript',
 	},
 	{
-		name: 'Javascript',
-		icon: 'mdi:language-javascript',
-	},
-	{
 		name: 'HTML',
 		icon: 'mdi:language-html5',
 	},
@@ -54,12 +50,43 @@ const comfortable = [
 		icon: 'simple-icons:postgresql',
 	},
 	{
-		name: 'Git',
-		icon: 'mdi:git',
+		name: 'Prisma',
+		icon: 'simple-icons:prisma',
 	},
 	{
 		name: 'GitHub',
 		icon: 'mdi:github',
+	},
+	{
+		name: 'tRPC',
+	},
+
+	{
+		name: 'Java',
+		icon: 'mdi:language-java',
+	},
+	{
+		name: 'C',
+		icon: 'teenyicons:c-outline',
+	},
+];
+
+const mastering = [
+	{
+		name: 'Python',
+		icon: 'mdi:language-python',
+	},
+	{
+		name: '',
+		icon: 'mdi:language-html5',
+	},
+	{
+		name: 'C#',
+		icon: 'teenyicons:c-sharp-outline',
+	},
+	{
+		name: 'React Native',
+		icon: 'tabler:brand-react-native',
 	},
 ];
 ---
@@ -150,6 +177,10 @@ const comfortable = [
 				</div>
 				<div>
 					<strong>Skills Im Still Mastering</strong>
+					<div class="grid grid-cols-4 gap-1 items-center py-4">
+						{mastering.map((skill) => <SkillsItem item={skill} />)}
+						<div></div>
+					</div>
 				</div>
 			</div>
 		</div>
